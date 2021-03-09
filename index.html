@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Comparaisons PCRS</title>
+    </head>
+    <body>
+        <h1>Test WMS JPG75 vs JPG90</h1>
+        <h2>Taille réelle</h2>
+        <h3>JPG75</h3>
+        <p>
+            <img
+                src="http://zipfer/wxs?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=normal&FORMAT=image/jpeg&LAYERS=PCRS_Test_Carnac_JPG75&CRS=EPSG:2154&BBOX=245332,6737110,245338,6737115&WIDTH=120&HEIGHT=100"
+                title="JPG75"
+            />
+        </p>
+        <h3>JPG90</h3>
+        <p>
+            <img
+                src="http://zipfer/wxs?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=normal&FORMAT=image/jpeg&LAYERS=PCRS_Test_Carnac_JPG90&CRS=EPSG:2154&BBOX=245332,6737110,245338,6737115&WIDTH=120&HEIGHT=100"
+                title="JPG90"
+            />
+        </p>
+        <h2>Taille x10</h2>
+        <h3>JPG75</h3>
+        <p>
+            <img
+                src="http://zipfer/wxs?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=normal&FORMAT=image/jpeg&LAYERS=PCRS_Test_Carnac_JPG75&CRS=EPSG:2154&BBOX=245332,6737110,245338,6737115&WIDTH=120&HEIGHT=100"
+                title="JPG75"
+                style="height: 1000px; width: 1200px; image-rendering: crisp-edges;"
+            />
+        </p>
+        <h3>JPG90</h3>
+        <p>
+            <img
+                src="http://zipfer/wxs?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=normal&FORMAT=image/jpeg&LAYERS=PCRS_Test_Carnac_JPG90&CRS=EPSG:2154&BBOX=245332,6737110,245338,6737115&WIDTH=120&HEIGHT=100"
+                title="JPG90"
+                style="height: 1000px; width: 1200px; image-rendering: crisp-edges;"
+            />
+        </p>
+
+        <h1>Test WMS LAMB93 vs WM</h1>
+        <h2>LAMB93</h2>
+        <p>
+            <img
+                src="http://zipfer/wxs?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=normal&FORMAT=image/jpeg&LAYERS=PCRS_Test_Carnac_JPG90&CRS=EPSG:2154&BBOX=245332,6737110,245338,6737115&WIDTH=1200&HEIGHT=1000"
+                title="LAMB93"
+            />
+        </p>
+        <h2>WM</h2>
+        <p>
+            <img
+                src="http://zipfer/wxs?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=normal&FORMAT=image/jpeg&LAYERS=PCRS_Test_Carnac_WM_5cm&CRS=EPSG:2154&BBOX=245332,6737110,245338,6737115&WIDTH=1200&HEIGHT=1000"
+                title="WM"
+            />
+        </p>
+
+    </body>
+</html>
